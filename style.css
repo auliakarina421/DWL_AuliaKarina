@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin-top: 37px;
+  margin-left: 47px;
+}
+
+header h1{
+  font-size: 47px;
+  color: blue;
+}
+
+input{
+  padding: 0.3rem 1rem;
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-areas: "nav nav main main main main main" "nav nav aside aside section1 section1 section2" 
+  "nav nav footer footer footer footer footer ";
+}
+
+nav{
+  grid-area: nav;
+  width: 200px;
+  height: auto;
+  padding: 47px 0px;
+  margin-left: 40px;
+  background-color: blue;
+}
+
+nav a{
+  display: block;
+  padding: 19px 53px;
+  color: beige;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background-color: blue;
+}
+
+nav .keluar{
+  color: beige;
+}
+
+main{
+  grid-area: main;
+  width: 990px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  margin-left: 1rem;
+}
+
+.title{
+  margin-left: 10px;
+  color: beige;
+}
+
+.title p{
+  margin-top: 9px;
+}
+
+.profil img{
+  width: 150px;
+  height: 150pcx;
+  margin: 1rem;
+  border-radius: 50%;
+}
+
+aside{
+  grid-area: aside;
+  width: 500px;
+  margin-left: 1rem;
+  background-color: beige;
+  margin-top: 10px;
+}
+
+aside h3{
+  margin-top: 10px;
+  margin-left: 6px;
+  color: black;
+}
+
+aside img{
+  width: 450px;
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 6px;
+  border-radius: 5px;
+}
+
+.section1{
+  grid-area: section1;
+  margin-top: 10px;
+  background-color: azure;
+  width: 200px;
+}
+
+.matkul, .aktivitas{
+  background-color: rgb(226, 226, 219);
+}
+
+.section1 h3, .matkul, .section2 h3, .aktivitas{
+  margin: 10px;
+  color: black;
+}
+
+.matkul p, .aktivitas p{
+  margin-top: 10px;
+  color: blue;
+}
+
+section2{
+  grid-area: section2;
+  margin-top: 10px;
+  background-color: beige;
+  width: 200px;
+  margin-right: 1rem;
+}
+
+footer{
+  grid-area: footer;
+  margin-top: 10px;
+  margin-left: 1rem;
+  width: 990px;
+  background-color: beige;
+}
+
+footer h3, .dokumen{
+  margin-top: 5px;
+  margin-left: 1px;
+  color: rgb(16, 15, 17);
+  padding: 1rem;
+  background-color: rgb(204, 204, 195);
+}
+
+footer p span{
+  color: black;
+  font-weight: bold;
+}
